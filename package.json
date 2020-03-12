@@ -1,9 +1,9 @@
 {
   "name": "grocery-manager",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 8040",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,10 +12,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.5",
+    "@angular/cdk": "^9.1.1",
     "@angular/common": "~9.0.5",
     "@angular/compiler": "~9.0.5",
     "@angular/core": "~9.0.5",
     "@angular/forms": "~9.0.5",
+    "@angular/material": "^9.1.1",
     "@angular/platform-browser": "~9.0.5",
     "@angular/platform-browser-dynamic": "~9.0.5",
     "@angular/router": "~9.0.5",

@@ -1,0 +1,19 @@
+<div style="padding-top: 40px ;">
+<div style = "text-align:center">
+    <!-- code for input textbox and Add button -->
+    <input matInput placeholder="Enter Item" type="text" id="myItem" autocomplete="off" [(ngModel)]="item.name" (keydown.enter)="onClick()">
+    <input type="submit" id="mySubmit" value="Add" (click)="onClick()">
+</div>
+
+<!-- <span color ="white" >{{ items | json}}</span> -->
+
+<!-- code to display the list -->
+<ul class="list-group">
+  <li *ngFor="let item of items" class="list-group-item">
+      <span class="display-text"> {{ item.name }} </span>
+      <button class="delete-icon" (click)="onDelete(item)"><mat-icon>delete</mat-icon></button> 
+  </li>
+</ul>
+</div>
+
+

@@ -1,0 +1,67 @@
+input[type="text"] {
+  display: inline-block;
+  float: center;
+  width: 250px;
+  height: 25px;
+  padding-right: 50px;
+  padding-left: 2mm;
+  font-size: 16px;
+  position: relative;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: medium;
+  float: center;
+  margin-left: -60px;
+  height: 30px;
+  width: 60px;
+  top: -1px;
+  background: #C70039;
+  color: white;
+  font-weight: bold;
+  -webkit-appearance: none;
+}
+
+.list-group {
+  list-style-type:decimal;
+  padding-top: 5px;
+  position: absolute;
+  align-items: center;
+  color: white;
+}
+
+.list-group-item { 
+  border-style: inset;
+  border-width: thin;
+  padding-top: 10px;
+  height: 26px;
+  width: 300px;
+}
+
+.display-text {
+  padding-top: 0px;
+  padding-left: 8px;
+  color: white;
+  text-align: center;
+}
+
+.delete-icon{
+  color: rgb(165, 30, 30);
+  position: absolute;
+  right:2px;
+  background-color: transparent;
+  border: none;
+  size: 12px;
+  padding-top: 0px;
+}
+
+
+
+
+
+
+
+
