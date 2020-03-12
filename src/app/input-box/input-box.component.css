@@ -1,6 +1,5 @@
 input[type="text"] {
   display: inline-block;
-  float: center;
   width: 250px;
   height: 25px;
   padding-right: 50px;
@@ -14,7 +13,6 @@ input[type="submit"] {
   position: relative;
   text-align: center;
   font-size: medium;
-  float: center;
   margin-left: -60px;
   height: 30px;
   width: 60px;
