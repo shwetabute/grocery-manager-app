@@ -54,12 +54,33 @@ input[type="submit"] {
   border: none;
   size: 12px;
   padding-top: 0px;
+  padding-bottom: 2px;
+}
+
+.edit-icon{
+  color: white;
+  position: absolute;
+  right:28px;
+  background-color: transparent;
+  border: none;
+  size: 12px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+}
+
+.done-icon{
+  color: darkgreen;
+  position: absolute;
+  right:52px;
+  background-color: transparent;
+  border: none;
+  size: 12px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  font-weight: bolder;
 }
 
 
-
-
-
-
-
-
+/* .strike{
+  text-decoration: line-through;
+} */

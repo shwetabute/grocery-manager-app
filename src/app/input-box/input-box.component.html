@@ -10,8 +10,13 @@
 <!-- code to display the list -->
 <ul class="list-group">
   <li *ngFor="let item of items" class="list-group-item">
-      <span class="display-text"> {{ item.name }} </span>
-      <button class="delete-icon" (click)="onDelete(item)"><mat-icon>delete</mat-icon></button> 
+      <label title="edit task">
+        <span class="edit-icon" (click)="onEdit(item)"><mat-icon>create</mat-icon></span>
+      </label> 
+      <label title="delete task">
+        <span class="delete-icon" (click)="onDelete(item)"><mat-icon>delete</mat-icon></span> 
+      </label>
+      <span (click)="onStrike(item)" [ngClass]="{'strike': item.strike}"> {{ item.name }} </span>
   </li>
 </ul>
 </div>
