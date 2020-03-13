@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: 'app-input-box',
@@ -19,8 +20,9 @@ export class InputBoxComponent{
 
   // function to add or edit item in the items array 
   onClick(){
+    this.item.name 
     if(this.item.id == 0){
-      (this.item.name.length>2) ? this.items.push({id: (new Date()).getTime(), name: this.capitalizeFirstLetter(this.item.name), strike: false}): "";
+      (this.item.name.length>2) ? this.items.push({id: (new Date()).getTime(), name: this.capitalizeFirstLetter(this.item.name), strike: false}): ""; 
     }
     else{
       for(var i = 0;i < this.items.length; i++){
@@ -33,7 +35,6 @@ export class InputBoxComponent{
     this.item.name = "";
     this.item.id = 0;
   }
-
 
   // function to edit item from the list
   onEdit(e_item){

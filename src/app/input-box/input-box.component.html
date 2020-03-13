@@ -1,22 +1,27 @@
+
 <div style="padding-top: 40px ;">
-<div style = "text-align:center">
+  <div style = "text-align:center">
     <!-- code for input textbox and Add button -->
-    <input matInput placeholder="Enter Item" type="text" id="myItem" autocomplete="off" [(ngModel)]="item.name" (keydown.enter)="onClick()">
+    <input matInput placeholder="Enter Item" aria-label="Show Name" type="text" id="myItem" autocomplete="off" [(ngModel)]="item.name" (keydown.enter)="onClick()">
     <input type="submit" id="mySubmit" value="Add" (click)="onClick()">
-</div>
+  </div>
+
 
 <!-- <span color ="white" >{{ items | json}}</span> -->
 
 <!-- code to display the list -->
 <ul class="list-group">
   <li *ngFor="let item of items" class="list-group-item">
-      <label title="edit task">
+      <label title="edit item">
         <span class="edit-icon" (click)="onEdit(item)"><mat-icon>create</mat-icon></span>
       </label> 
-      <label title="delete task">
+      <label title="delete item">
         <span class="delete-icon" (click)="onDelete(item)"><mat-icon>delete</mat-icon></span> 
       </label>
-      <span (click)="onStrike(item)" [ngClass]="{'strike': item.strike}"> {{ item.name }} </span>
+
+      <span (click)="onStrike(item)" [ngClass]="{'strike': item.strike}"> 
+        <label title="Click on the item to mark it as completed"> {{ item.name }} </label>
+      </span>
   </li>
 </ul>
 </div>
